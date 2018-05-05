@@ -31,12 +31,16 @@ api.historical_currency
 api.grouped_balance
 api.gains
 
-# Optionally, you can pass a Hash with additional parameters, as documented at https://cointracking.info/api/api.php.
-# Note that `start` and `end` are special parameters that accept DateTime, Time or a Unix timestamp. This gem does the conversion for you.
+# Optionally, you can pass a Hash with additional parameters, as documented
+# at https://cointracking.info/api/api.php.
+#
+# Note that `start` and `end` are special parameters that accept DateTime,
+# Time or a Unix timestamp. This gem does the conversion for you.
 
 api.trades(limit: 100, order: 'DESC', start: 1.year.ago, end: 1525486520)
 
-# Each call returns a CoinTracking::Response object. Here are some of the methods that are available:
+# Each call returns a CoinTracking::Response object. Here are some of the
+# methods that are available:
 
 response.success?      # => true/false
 response.data          # => Hash
