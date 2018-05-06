@@ -62,7 +62,6 @@ module CoinTracking
     def api_query(action, params = {})
       params   = { method: action, nonce: nonce }.merge(params)
       response = HTTParty.post API_URL, body: params, headers: http_headers(params), debug_output: DEBUG ? $stdout : nil
-      puts params
       CoinTracking::Response.new(response)
     end
 
