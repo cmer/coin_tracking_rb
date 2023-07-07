@@ -32,10 +32,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.16)
+  bundler
   coin_tracking!
-  rake (~> 13.0)
-  rspec (~> 3.0)
+  rake
+  rspec
 
 BUNDLED WITH
-   1.16.1
+   2.4.13
